@@ -22,7 +22,7 @@ const useLogin = () => {
         const { data } = response;
         toast.success(`Login successful. Welcome, ${data.userData.name}!`);
         login(data.token, data.userData);
-        navigate("/");
+        navigate("/task");
       } else if (response.data.status === "fail") {
         const { data } = response;
         toast.error(data.message);

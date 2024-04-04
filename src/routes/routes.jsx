@@ -14,30 +14,21 @@ const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <PrivateRoutes>
-            <Task />
-          </PrivateRoutes>
-        ),
+        element: <Login />,
       },
       {
-        path: "/:id",
-        element: (
-          <PrivateRoutes>
-            <TaskDetails />
-          </PrivateRoutes>
-        ),
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/task",
+        element: <Task />,
+      },
+      {
+        path: "/task/:id",
+        element: <TaskDetails />,
       },
     ],
-  },
-
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
   },
 ]);
 export default routes;

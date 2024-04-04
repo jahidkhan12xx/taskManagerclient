@@ -28,7 +28,7 @@ const TaskDetails = () => {
 
     if (res.status === 201) {
       toast.success("Task Updated");
-      navigate("/");
+      navigate("/task");
     } else {
       toast.success("Something is wrong");
     }

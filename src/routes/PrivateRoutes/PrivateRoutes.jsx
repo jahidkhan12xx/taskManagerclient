@@ -7,12 +7,11 @@ const PrivateRoutes = ({ children }) => {
 
   if (loading) {
     return <h1>Loading....</h1>;
-  }
-
-  if (isAuthenticated) {
+  } else if (isAuthenticated) {
     return children;
+  } else {
+    return <Navigate to="/" />;
   }
-  return <Navigate to="/login" />;
 };
 
 export default PrivateRoutes;

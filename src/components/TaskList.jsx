@@ -57,7 +57,7 @@ const TaskList = () => {
                   >
                     Delete
                   </button>
-                  <Link to={`/${task._id}`}>
+                  <Link to={`/task/${task._id}`}>
                     <button className="btn btn-sm btn-ghost">Update</button>
                   </Link>
                 </td>

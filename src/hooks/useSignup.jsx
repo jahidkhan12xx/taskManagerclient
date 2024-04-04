@@ -31,7 +31,7 @@ const useSignup = () => {
           `Registration successful. Welcome, ${data.newUser.name}!`
         );
         login(data.token, data.newUser);
-        navigate("/login");
+        navigate("/");
       } else if (response.data.status === "fail") {
         const { data } = response;
         toast.error(data.message);

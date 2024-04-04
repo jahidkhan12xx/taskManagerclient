@@ -2,7 +2,7 @@ import axios from "axios";
 
 const createAxiosInstance = () => {
   const instance = axios.create({
-    baseURL: "http://localhost:8000/api/v1",
+    baseURL: "https://taskserver-gules.vercel.app/api/v1",
     withCredentials: true,
   });
 
